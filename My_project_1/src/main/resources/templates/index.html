@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>개인 프로젝트</title>
+</head>
+<body>
+	<div>
+		<ul id="menuArea">
+			<li class="mainMenu"><a href="/">홈</a></li>
+			<li class="mainMenu"><a href="/">메뉴</a></li>
+			<li class="mainMenu"><a href="/">메뉴</a></li>
+			<li class="mainMenu"><a href="/">메뉴</a></li>
+			<li class="mainMenu"><a href="/">메뉴</a></li>
+		</ul>
+		<h1>안녕하세요</h1>
+		<h2>아래에는 내용이 포함됩니다</h2>
+		<div id="contentArea">
+			<div th:insert="~{${cp}::${cpSub}}"></div>
+		</div>
+	</div>
+</body>
+</html>
