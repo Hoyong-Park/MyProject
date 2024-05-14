@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#homeContentArea {
+	min-width: 100%;
+	min-height: 100%;
+}
+.homeContentTitle {
+	border-bottom: 5px solid #3c3f44;
+}
+.homeContentTitle h1 {
+	display: block;
+	font-size: 30pt;
+	font-weight: bold;
+	margin: 10px;
+	color: #3c3f44;
+}
+
+.homeContent {
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	margin: 0 5%;
+	vertical-align: middle;;
+}
+
+.homeContent h1 {
+	display: block;
+	font-size: 30pt;
+	font-weight: bold;
+	margin: 30px auto 10px;
+	color: #3c3f44;
+}
+
+.homeContent p {
+	display: block;
+	font-size: 15pt;
+	font-weight: bold;
+	margin: 10px auto;
+	color: #3c3f44;
+	text-align: left;
+}

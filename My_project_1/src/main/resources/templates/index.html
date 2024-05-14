@@ -3,20 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>개인 프로젝트</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div>
-		<ul id="menuArea">
-			<li class="mainMenu"><a href="/">홈</a></li>
-			<li class="mainMenu"><a href="/">메뉴</a></li>
-			<li class="mainMenu"><a href="/">메뉴</a></li>
-			<li class="mainMenu"><a href="/">메뉴</a></li>
-			<li class="mainMenu"><a href="/">메뉴</a></li>
-		</ul>
-		<h1>안녕하세요</h1>
-		<h2>아래에는 내용이 포함됩니다</h2>
-		<div id="contentArea">
-			<div th:insert="~{${cp}::${cpSub}}"></div>
+	<div id="container">
+		<div id="mainContainer">
+			<!-- header -->
+			<div id="header">
+				<div id="logoArea">
+					<a href="/"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<div id="loginConainer">
+					<div id="loginArea" th:insert="~{${lp}::${lpSub}}"></div>
+				</div>
+				<ul id="menuArea">
+					<li class="mainMenu now" th:if="${cp=='home'}"><a href="/">홈</a></li>
+					<li class="mainMenu" th:unless="${cp=='home'}"><a href="/">홈</a></li>
+					<li class="mainMenu"><a href="/">메뉴</a></li>
+					<li class="mainMenu"><a href="/">메뉴</a></li>
+					<li class="mainMenu"><a href="/">메뉴</a></li>
+					<li class="mainMenu"><a href="/">메뉴</a></li>
+				</ul>
+			</div>
+			<!-- content -->
+			<div id="contentArea">
+				<div th:insert="~{${cp}::${cpSub}}"></div>
+			</div>
+			<!-- footer -->
+			<div id="footer">
+				<p>이름 : 박호용</p>
+				<p>전화번호 : 010-7191-5727</p>
+				<p>E-mail : hoyong005@gmail.com</p>
+			</div>
 		</div>
 	</div>
 </body>

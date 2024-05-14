@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-spacing: 0px;
+	font-size: 0;
+	font-family: "Nanum Gothic", sans-serif;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+#container {
+	min-width: 100%;
+	min-height: 100%;
+	background-color: black;
+}
+
+#mainContainer {
+	min-width: 1280px;
+	min-height: 100vh;
+	width: 1280px;
+	margin: 0 auto;
+	background-color: white;
+	margin: 0 auto;
+}
+
+#header {
+	width: 1280px;
+}
+
+#header>div {
+	vertical-align: top;
+}
+
+#logoArea {
+	display: inline-block;
+	width: 300px;
+	height: 100px;
+}
+
+#loginConainer {
+	display: inline-block;
+	width: 980px;
+	height: 100px;
+	text-align: right;
+}
+
+#loginArea {
+	display: inline-block;
+	position: relative;
+	margin-left: auto;
+	width: 300px;
+	height: 100px;
+}
+
+#loginForm {
+	width: 100%;
+	height: 100%;
+	text-align: justify;
+}
+
+#loginInputArea {
+	display: inline-block;
+	width: 160px;
+	margin: 15px 10px 0 15px;
+	vertical-align: top;
+}
+
+.loginInput {
+	width: 160px;
+	height: 25px;
+	border-top: 1px solid #bfc4cd;
+	border-left: 1px solid #bfc4cd;
+	border-right: 1px solid #dee1e5;
+	border-bottom: 1px solid #dee1e5;
+	outline: none;
+	margin-bottom: 5px;
+	font-size: 10pt;
+	padding: 3px 5px;
+}
+
+.loginInput:focus {
+	background-color: #eceef0;
+}
+
+#loginBtn {
+	position: relative;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 10pt;
+	margin-top: 15px;
+	vertical-align: top;
+	cursor: pointer;
+	color: #3c3f44;
+	font-weight: bold; box-shadow : #0000000a 0px 2px 2px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ebebeb #ebebeb #c6c6c6;
+	border-image: initial;
+	background: linear-gradient(#fff 40%, #eceef0 100%);
+	box-shadow: #0000000a 0px 2px 2px;
+}
+
+#loginBtn:hover {
+	background: linear-gradient(#eceef0 40%, #fff 100%);
+}
+
+#memberSuppotArea {
+	margin: 0 15px;
+	text-align: center;
+}
+
+.loginLink {
+	display: inline-block;
+	position: relative;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 15px;
+	color: #3c3f44;
+}
+
+#menuArea {
+	background-color: #5592FC;
+}
+
+.mainMenu {
+	display: inline-block;
+	width: 20%;
+	height: 45px;
+}
+
+.now {
+	border-bottom: 5px solid #05EEA9;
+}
+
+.mainMenu:hover {
+	border-bottom: 5px solid #FFB700;
+}
+
+.mainMenu a {
+	margin: 5px 0;
+	display: inline-block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #fff;
+}
+#footer {
+	width: 1280px;
+	height: 105px;
+	position: relative;
+	border-top: 1px solid #3c3f44;
+}
+#footer p {
+	margin: 10px auto;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #3c3f44;
+	text-align: center;
+}

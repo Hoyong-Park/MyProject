@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="loginForm" action="login" method="post" th:fragment="loginForm">
+		<div id="loginInputArea">
+			<input class="loginInput" name="id" placeholder="아이디" autocomplete="none">
+			<input class="loginInput" name="pw" type="password" placeholder="비밀번호" autocomplete="none">
+		</div>
+		<button id="loginBtn">로그인하기</button>
+		<div id="memberSuppotArea">
+			<a href="/" class="loginLink">계정찾기</a>
+			<a href="/" class="loginLink">회원가입</a>
+		</div>
+	</form>
+</body>
+</html>
